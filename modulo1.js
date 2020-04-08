@@ -34,4 +34,21 @@ label.appendChild(texto);
 div.appendChild(label);
 */
 
-//escrevendo qualquer coisa
+//Modulo 1 - Exercicio 2
+
+/*
+
+function pares(x,y){
+
+    for(var i =x;i<=y;i+=2){
+        console.log(i)
+    }
+
+}
+
+pares(32,321);
+
+*/
+
+//Modulo 1 - Exericio 3
+
