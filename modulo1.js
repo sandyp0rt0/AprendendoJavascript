@@ -97,6 +97,8 @@ console.log(experiencia("oi"));
 
 //Modulo 1 - Exericio 5
 
+/*
+
 var usuarios = [
     {
     nome: "Diego",
@@ -123,3 +125,4 @@ function retornaHabilidades(arr){
 }
 
 imprimeHabilidadesUsuarios(usuarios);
+*/
