@@ -45,7 +45,7 @@ function getRandomColor() {
    */
 
 
-//Modulo 2 - Exericio 3
+//Modulo 2 - Exercicio 3
 
 /*
 var nomes = ["Diego","Gabriel","Lucas"];
@@ -79,7 +79,7 @@ function renderLista(nomes){
 }
 
 var input = document.querySelector(".app input");
-var botao = document.querySelector(".app button");
+//var botao = document.querySelector(".app button");
 
 function adicionar(){
     var texto = input.value;
