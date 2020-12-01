@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Exercicio 05 - Modulo 01 - JavaScript</title>
+</head>
+<body>
+
+
+    <script>
+        var usuarios = [
+            {
+                nome: "Diego",
+                habilidades: ["Javascript","ReactJS","Redux"]
+            },
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ];
+
+        function textUsuarios(usuarios){
+            var text;
+            for (const user of usuarios) {
+                text = "O "+user.nome+" possui as habilidades: ";
+                text += user.habilidades.join(", ");
+                console.log(text);
+            }
+        }
+
+        textUsuarios(usuarios);
+
+    </script>
+</body>
+</html>
