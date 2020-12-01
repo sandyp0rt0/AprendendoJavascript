@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Exercicio 03 - Modulo 02 - JavaScript</title>
+</head>
+<body>
+    <div class="app">
+        <ul id="lista">
+
+        </ul>
+    </div>
+    
+
+
+    <script>
+        var ulEl = document.querySelector("#lista");
+        var nomes = ["Diego","Gabriel","Lucas"];
+        var liEl,text;
+        for (const nome of nomes) {
+            liEl = document.createElement("li");
+            text = document.createTextNode(nome);
+            liEl.appendChild(text);
+            ulEl.appendChild(liEl);
+        }
+    </script>
+</body>
+</html>
