@@ -150,3 +150,40 @@ getRepositorio("sandyp0rt0/AprendendoJavascript");
 
 
 console.log("Codigo 04");
+
+const buscaUsuario = usuario => {
+    axios.get(`https://api.github.com/users/${usuario}`)
+        .then(response => {
+            console.log(response.data);
+            const git = [response.data.login,
+                        response.data.name,
+                        response.data.url];
+            console.log(git);
+        })
+        .catch(err => {
+            console.log(err);
+            console.log(`Usuário ${usuario} não existe.`);
+        })
+}
+
+buscaUsuario("diego3g");
+buscaUsuario("sandyp0rt0");
+//buscaUsuario("diego3gfdf34trtr");
+
+const buscaUsuario2 = async (user) => {
+    try{
+        const response = await axios.get(`https://api.github.com/users/${user}`);
+        const {login,name,url, ...resto} = response.data;
+        console.log([login,name,url]);
+    }catch(err){
+        console.log(err);
+        console.log(`Usuário ${user} não existe.`);
+    }
+    
+}
+
+buscaUsuario2("diego3g");
+buscaUsuario2("sandyp0rt0");
+//buscaUsuario2("jd8783hb8i");
+
+
